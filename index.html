@@ -50,6 +50,13 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 		var b_context = b_canvas.getContext ("2d"); // draws context for element which will be 2d
 		b_canvas.width = b_canvas.width; // exact code to clear canvas
 	}
+	function name_b() {
+		var b_canvas = document.getElementById("a"); // this calls on the canvas element 
+		var b_context = b_canvas.getContext ("2d"); // draws context for element which will be 2d
+		b_context.font = "30px Times New Roman "; //font and size of text 
+		b_context.fillStyle = "black"; // color of text
+		b_context.fillText("Adya Das", 50,100); // location of my text 
+	}
 </script>
 
 
@@ -88,6 +95,9 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 
 	<button onclick = "clearRectangle()" > Clear the Canvas </button>
 	<!-- Added button to clear the canvas -->
+
+	<button onclick = "name_b()" > My Name! </button>
+	<!-- Added button to add my name onto canvas -->
 	
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
