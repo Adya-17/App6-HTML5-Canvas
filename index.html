@@ -58,14 +58,14 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 		b_context.fillText("Adya Das", 50,100); // location of my text 
 	}
 	function loadImage() {
-   		 var canvasImage = document.getElementById("a"); //code for adding image
-   		 var contextImage = canvasImage.getContext("2d");
-  	         var family = new Image(); 
-                 family.src = "https://wallpapercave.com/wp/wp6675059.jpg";
-                 family.onload = function() {
-                 contextImage.drawImage(family, 5, 20, 100, 75); //position of image
-             };
-          }
+  		var canvasImage = document.getElementById("a"); //code for adding image
+     		var contextImage = canvasImage.getContext("2d");
+    		var family = new Image(); 
+    		family.src = "https://wallpapercave.com/wp/wp6675059.jpg";
+    		family.onload = function() {
+        	contextImage.drawImage(family, 5, 20, 100, 75); //position of image
+    };
+}
 	}
 </script>
 
