@@ -59,12 +59,15 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 	}
 	
 	function image() {
-		var b_canvas = document.getElementById("a"); //code for adding image
-		var b_context = b_canvas.getContext("2d");
-		var img = document.getElementById("image"); // calls on image source 
-		img.src = "https://wallpapercave.com/wp/wp6675059.jpg" // image 
-		b_context.drawImage(img,0,0, b_canvas.width, b_canvas.height); //position of image
-	}
+    		var b_canvas = document.getElementById("a"); // Get the canvas element
+    		var b_context = b_canvas.getContext("2d"); // Get the 2D rendering context
+    		var img = document.getElementById("image"); // Get the image element
+    		img.src = "https://wallpapercave.com/wp/wp6675059.jpg"; // Set the image source
+
+    		img.onload = function() { // Ensure the image is fully loaded before drawing
+        	b_context.drawImage(img, 0, 0, b_canvas.width, b_canvas.height); // Draw the image onto the canvas
+    };
+}
 </script>
 
 
