@@ -58,11 +58,14 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 		b_context.fillText("Adya Das", 50,100); // location of my text 
 	}
 	function loadImage() {
-		var canvasImage = document.getElementById("a"); //code for adding image
-		var contextImage = canvasImage.getContext("2d");
-		var family = new Image(); // 
-		family.src "https://images.search.yahoo.com/images/view;_ylt=Awrih.MzMAJmSagIzhGJzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2IzYTc1NWM4Y2U2MTY4M2JiYjVjZmMxZmIyMmFhYjgwBGdwb3MDMTIEaXQDYmluZw--?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dcartoon%2Bimage%26ei%3DUTF-8%26type%3DE211US714G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D12&w=2560&h=2560&imgurl=wallpapercave.com%2Fwp%2Fwp6675059.jpg&rurl=https%3A%2F%2Fwallpapercave.com%2Fcartoon-movies-wallpapers&size=627.7KB&p=cartoon+image&oid=b3a755c8ce61683bbb5cfc1fb22aab80&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=Cartoon+Movies+Wallpapers+-+Wallpaper+Cave&b=0&ni=160&no=12&ts=&tab=organic&sigr=XHN7xwE.Ndqi&sigb=giXQwSAPnW.C&sigi=MGsXDmPBONrx&sigt=d3UhwAenls8t&.crumb=8KwTDAEcPHc&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E211US714G0"
-		context.drawImage(family,5,20, 100, 75); //position of image
+   		 var canvasImage = document.getElementById("a"); //code for adding image
+   		 var contextImage = canvasImage.getContext("2d");
+  	         var family = new Image(); 
+                 family.src = "https://images.search.yahoo.com/images/view;_ylt=Awrih.MzMAJmSagIzhGJzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2IzYTc1NWM4Y2U2MTY4M2JiYjVjZmMxZmIyMmFhYjgwBGdwb3MDMTIEaXQDYmluZw--?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dcartoon%2Bimage%26ei%3DUTF-8%26type%3DE211US714G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D12&w=2560&h=2560&imgurl=wallpapercave.com%2Fwp%2Fwp6675059.jpg&rurl=https%3A%2F%2Fwallpapercave.com%2Fcartoon-movies-wallpapers&size=627.7KB&p=cartoon+image&oid=b3a755c8ce61683bbb5cfc1fb22aab80&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=Cartoon+Movies+Wallpapers+-+Wallpaper+Cave&b=0&ni=160&no=12&ts=&tab=organic&sigr=XHN7xwE.Ndqi&sigb=giXQwSAPnW.C&sigi=MGsXDmPBONrx&sigt=d3UhwAenls8t&.crumb=8KwTDAEcPHc&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E211US714G0";
+                 family.onload = function() {
+                 contextImage.drawImage(family, 5, 20, 100, 75); //position of image
+             };
+          }
 	}
 </script>
 
