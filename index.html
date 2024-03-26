@@ -58,15 +58,12 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 		b_context.fillText("Adya Das", 50,100); // location of my text 
 	}
 	
-	function loadImage() {
- 		var canvasImage = document.getElementById("a"); //code for adding image
-    		var contextImage = canvasImage.getContext("2d");
-    		var family = new Image(); 
-    		family.src = "https://wallpapercave.com/wp/wp6675059.jpg";
-    		family.onload = function() {
-        	contextImage.drawImage(family, 5, 20, 100, 75); //position of image
-    };
-}
+	function image() {
+		var b_canvas = document.getElementById("a"); //code for adding image
+		var b_context = b_canvas.getContext("2d");
+		var img = document.getElementById("image");
+		b_context.drawImage(img,10,20); //position of image
+	}
 </script>
 
 
@@ -109,10 +106,12 @@ var a_canvas = document.getElementById("a"); // this adds the canvas with its un
 	<button onclick = "name_b()" > My Name! </button>
 	<!-- Added button to add my name onto canvas -->
 
-	<button onclick = "loadImage()" > Add Image! </button>
+	<button onclick = "image()" > Add Image! </button>
 	<!--Added a button to add image -->
 	
-	
+	<p>Image to use:</p>
+	<img id="image" src="https://wallpapercave.com/wp/wp6675059.jpg"
+	<!--image loaded will show -->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
